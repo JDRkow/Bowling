@@ -901,6 +901,16 @@
         "build": {
           "build/netcoreapp1.0/xunit.runner.visualstudio.props": {}
         }
+      },
+      "Bowling.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Bowling.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Bowling.Domain.dll": {}
+        }
       }
     }
   },
@@ -3494,10 +3504,16 @@
         "xunit.runner.visualstudio.2.4.0.nupkg.sha512",
         "xunit.runner.visualstudio.nuspec"
       ]
+    },
+    "Bowling.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Bowling.Domain/Bowling.Domain.csproj",
+      "msbuildProject": "../Bowling.Domain/Bowling.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "Bowling.Domain >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 16.5.0",
       "coverlet.collector >= 1.2.0",
       "xunit >= 2.4.0",
@@ -3535,7 +3551,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Projects temp\\bowling\\Bowling.Domain\\Bowling.Domain.csproj": {
+              "projectPath": "C:\\Projects temp\\bowling\\Bowling.Domain\\Bowling.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

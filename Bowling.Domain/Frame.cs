@@ -4,12 +4,12 @@ using System.Text;
 
 namespace Bowling.Domain
 {
-    class Frame
+    public class Frame
     {
-        private int _pinsFirstThrow;
-        private int _pinsSecondThrow;
+        protected int _pinsFirstThrow;
+        protected int _pinsSecondThrow;
         protected int _score;
-        protected Frame (int pinsFirstThrow, int pinsSecondThrow)
+        public Frame (int pinsFirstThrow, int pinsSecondThrow)
         {
             _pinsFirstThrow = pinsFirstThrow;
             _pinsSecondThrow = pinsSecondThrow;
@@ -22,13 +22,13 @@ namespace Bowling.Domain
         {
             return _pinsSecondThrow;
         }
-        public Frame Add(int first, int second)
+        public Frame Create(int first, int second)
         {
             if (first == 10)
-                return new Strike();//strike
+                return new Strike();
             if ((first + second) == 10)
-                return new Spare();//spare
-            return new Open();//open
+                return new Spare(first, second);
+            return new Open(first, second);
         }
         public int Score()
         {

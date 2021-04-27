@@ -1,3 +1,4 @@
+using Bowling.Domain;
 using System;
 using Xunit;
 
@@ -10,7 +11,13 @@ namespace Bowling.Test
         [Fact]
         public void Test1()
         {
-
+            var game = new Game();
+            for (int i=0; i < 10; i++)
+            {
+                game.Throw(1, 1);
+            }
+            Assert.True(20 == game.Score());
+            
         }
     }
 }
