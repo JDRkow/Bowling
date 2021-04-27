@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace Bowling.Domain
 {
@@ -15,9 +16,11 @@ namespace Bowling.Domain
         {
             frames.Add(new Frame(0, 0));
             frames.Add(new Frame(0, 0));
-            for (int i = 0; i < 10; i++)
+            frames.Count();
+            for (int i = 0; i < frames.Count()-2; i++)
+            {
                 frames[i].Bonus(frames[i + 1], frames[i + 2]);
-
+            }
             int counter = 0;
             frames.ForEach(frame => counter += frame.Score());
             return counter;
