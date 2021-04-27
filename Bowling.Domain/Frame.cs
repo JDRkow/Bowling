@@ -8,7 +8,12 @@ namespace Bowling.Domain
     {
         private int _pinsFirstThrow;
         private int _pinsSecondThrow;
-        private int _score;
+        protected int _score;
+        protected Frame (int pinsFirstThrow, int pinsSecondThrow)
+        {
+            _pinsFirstThrow = pinsFirstThrow;
+            _pinsSecondThrow = pinsSecondThrow;
+        }
         public int FirstThrow()
         {
             return _pinsFirstThrow;
@@ -20,14 +25,17 @@ namespace Bowling.Domain
         public Frame Add(int first, int second)
         {
             if (first == 10)
-                return new Frame();//strike
+                return new Strike();//strike
             if ((first + second) == 10)
-                return new Frame();//spare
-            return new Frame();//open
+                return new Spare();//spare
+            return new Open();//open
         }
         public int Score()
         {
             return _pinsFirstThrow + _pinsSecondThrow + _score;
+        }
+        public virtual void Bonus(Frame one, Frame two)
+        {
         }
         public void Bonus(int points)
         {
