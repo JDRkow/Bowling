@@ -5,6 +5,10 @@ namespace Bowling.Domain
 {
     public class Game
     {
+        public Game()
+        {
+
+        }
         private List<Frame> frames = new List<Frame>();
         
         public void Throw(int first, int second)
