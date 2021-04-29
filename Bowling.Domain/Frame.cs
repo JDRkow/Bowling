@@ -2,9 +2,9 @@
 {
     public class Frame
     {
-        protected int _pinsFirstThrow;
-        protected int _pinsSecondThrow;
-        protected int _score;
+        public int _pinsFirstThrow;
+        public int _pinsSecondThrow;
+        public int _score;
         public Frame (int pinsFirstThrow, int pinsSecondThrow)
         {
             _pinsFirstThrow = pinsFirstThrow;
