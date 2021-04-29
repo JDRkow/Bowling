@@ -1,8 +1,5 @@
 using Bowling.Domain;
-using System;
 using Xunit;
-
-//
 
 namespace Bowling.Test
 {

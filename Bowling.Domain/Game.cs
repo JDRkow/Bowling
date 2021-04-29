@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 
 namespace Bowling.Domain
@@ -26,9 +25,9 @@ namespace Bowling.Domain
             return counter;
         }
 
-        //static void Main(string[] args)
-        //{
+        static void Main(string[] args)
+        {
 
-        //}
+        }
     }
 }

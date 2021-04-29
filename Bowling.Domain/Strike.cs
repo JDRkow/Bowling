@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Bowling.Domain
+﻿namespace Bowling.Domain
 {
     class Strike : Frame
     {
