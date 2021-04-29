@@ -9,7 +9,7 @@ namespace Bowling.Domain
         
         public void Throw(int first, int second)
         {
-            frames.Add(new Frame(first, second).Create(first, second));
+            frames.Add(new Frame(first, second).Create());
         }
         public int Score()
         {

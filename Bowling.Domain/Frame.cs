@@ -18,13 +18,13 @@
         {
             return _pinsSecondThrow;
         }
-        public Frame Create(int first, int second)
+        public Frame Create()
         {
-            if (first == 10)
+            if (_pinsFirstThrow == 10)
                 return new Strike();
-            if ((first + second) == 10)
-                return new Spare(first, second);
-            return new Open(first, second);
+            if ((_pinsFirstThrow + _pinsSecondThrow) == 10)
+                return new Spare(_pinsFirstThrow, _pinsSecondThrow);
+            return new Open(_pinsFirstThrow, _pinsSecondThrow);
         }
         public int Score()
         {
