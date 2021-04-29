@@ -10,21 +10,21 @@ namespace Bowling.Test
         public void TestFirstStrikeThrow()
         {
             game.Throw(10, 0);
-            Assert.True(10 == game.Score());
+            Assert.True(10 == game.CalcScore());
         }
         [Fact]
         public void TestSrikePlusFirstThrow()
         {
             game.Throw(10, 0);
             game.Throw(7, 0);
-            Assert.True(24 == game.Score());
+            Assert.True(24 == game.CalcScore());
         }
         [Fact]
         public void TestStrikePlusSpare()
         {
             game.Throw(10, 0);
             game.Throw(7, 3);
-            Assert.True(30 == game.Score());
+            Assert.True(30 == game.CalcScore());
         }
         [Fact]
         public void TestStrikePlusSparePlusOpen()
@@ -32,7 +32,7 @@ namespace Bowling.Test
             game.Throw(10, 0);
             game.Throw(7, 3);
             game.Throw(7, 0);
-            Assert.True(44 == game.Score());
+            Assert.True(44 == game.CalcScore());
         }
         [Fact]
         public void TestStrikePlusSparePlusOpenThrow()
@@ -40,7 +40,7 @@ namespace Bowling.Test
             game.Throw(10, 0);
             game.Throw(7, 3);
             game.Throw(7, 2);
-            Assert.True(46 == game.Score());
+            Assert.True(46 == game.CalcScore());
         }
         [Fact]
         public void TestSpareThenStrike()
@@ -50,7 +50,7 @@ namespace Bowling.Test
             game.Throw(7, 2);
             game.Throw(9, 1);
             game.Throw(10,0);
-            Assert.True(76 == game.Score());
+            Assert.True(76 == game.CalcScore());
         }
         [Fact]
         public void TestRowStrikes()
@@ -62,7 +62,7 @@ namespace Bowling.Test
             game.Throw(10, 0);
             game.Throw(10, 0);
             game.Throw(10, 0);
-            Assert.True(126 == game.Score());
+            Assert.True(126 == game.CalcScore());
         }
         [Fact]
         public void TsetWeakThrow()
@@ -75,7 +75,7 @@ namespace Bowling.Test
             game.Throw(10, 0);
             game.Throw(10, 0);
             game.Throw(2, 3);
-            Assert.True(138 == game.Score());
+            Assert.True(138 == game.CalcScore());
         }
         [Fact]
         public void TestSparePlusOpen()
@@ -90,7 +90,7 @@ namespace Bowling.Test
             game.Throw(2, 3);
             game.Throw(6, 4);
             game.Throw(7, 0);
-            Assert.True(162 == game.Score());
+            Assert.True(162 == game.CalcScore());
         }
         [Fact]
         public void TestSpareAtEnd()
@@ -105,7 +105,7 @@ namespace Bowling.Test
             game.Throw(2, 3);
             game.Throw(6, 4);
             game.Throw(7, 3);
-            Assert.True(165 == game.Score());
+            Assert.True(165 == game.CalcScore());
         }
         [Fact]
         public void TestEndGame()
@@ -121,7 +121,7 @@ namespace Bowling.Test
             game.Throw(6, 4);
             game.Throw(7, 3);
             game.Throw(3, 0);
-            Assert.True(168 == game.Score());            
+            Assert.True(168 == game.CalcScore());            
         }
     }
 }

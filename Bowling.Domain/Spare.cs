@@ -4,9 +4,9 @@
     {
         public Spare(int first, int second) : base(first, second) { }
 
-        public override void Bonus(Frame one, Frame two)
+        public override void AddBonus(Frame one, Frame two)
         {
-            _score += one.FirstThrow();
+            _CalcScore += one.FirstThrow();
         }
     }
 }
