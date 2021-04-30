@@ -13,8 +13,6 @@ namespace Bowling.Domain
         }
         public int CalcScore()
         {
-            //frames.Add(new Frame(0, 0));
-            //frames.Add(new Frame(0, 0));
             var framesLenght = frames.Count();
             for (int i = 0; i <= framesLenght; i++)
             {
