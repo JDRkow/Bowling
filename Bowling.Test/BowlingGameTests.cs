@@ -127,5 +127,14 @@ namespace Bowling.Test
             game.Throw(3, 0);
             Assert.Equal(168 , game.CalcScore());            
         }
+        [Fact]
+        public void AllStrikes()
+        {
+            for (int i = 0; i < 12; i++)
+            {
+                game.Throw(10, 0);
+            }
+            Assert.Equal(330, game.CalcScore());
+        }
     }
 }
