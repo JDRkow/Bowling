@@ -2,32 +2,32 @@
 {
     public class Frame
     {
-        public int _pinsFirstThrow;
-        public int _pinsSecondThrow;
-        public int _CalcScore;
-        public Frame (int pinsFirstThrow, int pinsSecondThrow)
+        public int pinsFirstThrow;
+        public int pinsSecondThrow;
+        public int Score;
+        public Frame (int pinsFirst, int pinsSecond)
         {
-            _pinsFirstThrow = pinsFirstThrow;
-            _pinsSecondThrow = pinsSecondThrow;
+            pinsFirstThrow = pinsFirst;
+            pinsSecondThrow = pinsSecond;
         }
         public Frame CreateFrame()
         {
-            if (_pinsFirstThrow == 10)
+            if (pinsFirstThrow == 10)
                 return new Strike();
-            if ((_pinsFirstThrow + _pinsSecondThrow) == 10)
-                return new Spare(_pinsFirstThrow, _pinsSecondThrow);
-            return new Open(_pinsFirstThrow, _pinsSecondThrow);
+            if ((pinsFirstThrow + pinsSecondThrow) == 10)
+                return new Spare(pinsFirstThrow, pinsSecondThrow);
+            return new Open(pinsFirstThrow, pinsSecondThrow);
         }
         public int CalcScore()
         {
-            return _pinsFirstThrow + _pinsSecondThrow + _CalcScore;
+            return pinsFirstThrow + pinsSecondThrow + Score;
         }
         public virtual void AddBonus(Frame one, Frame two)
         {
         }
         public void AddBonus(int points)
         {
-            _CalcScore += points;
+            Score += points;
         }
     }
 }
