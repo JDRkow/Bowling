@@ -10,14 +10,6 @@
             _pinsFirstThrow = pinsFirstThrow;
             _pinsSecondThrow = pinsSecondThrow;
         }
-        public int FirstThrow()
-        {
-            return _pinsFirstThrow;
-        }
-        public int SecondThrow()
-        {
-            return _pinsSecondThrow;
-        }
         public Frame CreateFrame()
         {
             if (_pinsFirstThrow == 10)
