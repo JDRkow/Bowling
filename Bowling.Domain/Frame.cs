@@ -25,9 +25,5 @@
         public virtual void AddBonus(Frame one, Frame two)
         {
         }
-        public void AddBonus(int points)
-        {
-            Score += points;
-        }
     }
 }
