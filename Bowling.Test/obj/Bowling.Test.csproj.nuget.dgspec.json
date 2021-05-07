@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projects temp\\bowling\\Bowling.Test\\Bowling.Test.csproj": {}
+    "G:\\Download\\work focus\\job\\Bowling\\Bowling.Test\\Bowling.Test.csproj": {}
   },
   "projects": {
-    "C:\\Projects temp\\bowling\\Bowling.Domain\\Bowling.Domain.csproj": {
+    "G:\\Download\\work focus\\job\\Bowling\\Bowling.Domain\\Bowling.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projects temp\\bowling\\Bowling.Domain\\Bowling.Domain.csproj",
+        "projectUniqueName": "G:\\Download\\work focus\\job\\Bowling\\Bowling.Domain\\Bowling.Domain.csproj",
         "projectName": "Bowling.Domain",
-        "projectPath": "C:\\Projects temp\\bowling\\Bowling.Domain\\Bowling.Domain.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Projects temp\\bowling\\Bowling.Domain\\obj\\",
+        "projectPath": "G:\\Download\\work focus\\job\\Bowling\\Bowling.Domain\\Bowling.Domain.csproj",
+        "packagesPath": "C:\\Users\\JDR\\.nuget\\packages\\",
+        "outputPath": "G:\\Download\\work focus\\job\\Bowling\\Bowling.Domain\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\JDR\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -25,12 +22,10 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Projects temp\\nuget_packeges": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -42,7 +37,6 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
           "imports": [
             "net461",
             "net462",
@@ -58,24 +52,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Projects temp\\bowling\\Bowling.Test\\Bowling.Test.csproj": {
+    "G:\\Download\\work focus\\job\\Bowling\\Bowling.Test\\Bowling.Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projects temp\\bowling\\Bowling.Test\\Bowling.Test.csproj",
+        "projectUniqueName": "G:\\Download\\work focus\\job\\Bowling\\Bowling.Test\\Bowling.Test.csproj",
         "projectName": "Bowling.Test",
-        "projectPath": "C:\\Projects temp\\bowling\\Bowling.Test\\Bowling.Test.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Projects temp\\bowling\\Bowling.Test\\obj\\",
+        "projectPath": "G:\\Download\\work focus\\job\\Bowling\\Bowling.Test\\Bowling.Test.csproj",
+        "packagesPath": "C:\\Users\\JDR\\.nuget\\packages\\",
+        "outputPath": "G:\\Download\\work focus\\job\\Bowling\\Bowling.Test\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\JDR\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -83,15 +74,13 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Projects temp\\nuget_packeges": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Projects temp\\bowling\\Bowling.Domain\\Bowling.Domain.csproj": {
-                "projectPath": "C:\\Projects temp\\bowling\\Bowling.Domain\\Bowling.Domain.csproj"
+              "G:\\Download\\work focus\\job\\Bowling\\Bowling.Domain\\Bowling.Domain.csproj": {
+                "projectPath": "G:\\Download\\work focus\\job\\Bowling\\Bowling.Domain\\Bowling.Domain.csproj"
               }
             }
           }
@@ -104,7 +93,6 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
@@ -138,7 +126,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
         }
       }
     }

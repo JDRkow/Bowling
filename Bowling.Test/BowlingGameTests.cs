@@ -123,8 +123,7 @@ namespace Bowling.Test
             game.Throw(10, 0);
             game.Throw(2, 3);
             game.Throw(6, 4);
-            game.Throw(7, 3);
-            game.Throw(3, 0);
+            game.LastThrow(7, 3, 3);
             Assert.Equal(168 , game.CalcScore());            
         }
         [Fact]

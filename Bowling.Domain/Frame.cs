@@ -22,6 +22,7 @@
         {
             return pinsFirstThrow + pinsSecondThrow + Score;
         }
+        
         public virtual void AddBonus(Frame one, Frame two)
         {
         }
