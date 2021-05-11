@@ -1,45 +1,30 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Bowling.Domain
+﻿namespace Bowling.Domain
 {
     public class Frame
     {
-        protected int _pinsFirstThrow;
-        protected int _pinsSecondThrow;
-        protected int _score;
-        public Frame (int pinsFirstThrow, int pinsSecondThrow)
+        public int PinsFirstThrow;
+        public int PinsSecondThrow;
+        public int Score;
+        public Frame (int pinsFirst, int pinsSecond)
         {
-            _pinsFirstThrow = pinsFirstThrow;
-            _pinsSecondThrow = pinsSecondThrow;
+            PinsFirstThrow = pinsFirst;
+            PinsSecondThrow = pinsSecond;
         }
-        public int FirstThrow()
+        public Frame CreateFrame()
         {
-            return _pinsFirstThrow;
-        }
-        public int SecondThrow()
-        {
-            return _pinsSecondThrow;
-        }
-        public Frame Create(int first, int second)
-        {
-            if (first == 10)
+            if (PinsFirstThrow == 10)
                 return new Strike();
-            if ((first + second) == 10)
-                return new Spare(first, second);
-            return new Open(first, second);
+            if ((PinsFirstThrow + PinsSecondThrow) == 10)
+                return new Spare(PinsFirstThrow, PinsSecondThrow);
+            return new Plain(PinsFirstThrow, PinsSecondThrow);
         }
-        public int Score()
+        public int CalcScore()
         {
-            return _pinsFirstThrow + _pinsSecondThrow + _score;
+            return PinsFirstThrow + PinsSecondThrow + Score;
         }
-        public virtual void Bonus(Frame one, Frame two)
+        
+        public virtual void AddBonus(Frame one, Frame two)
         {
-        }
-        public void Bonus(int points)
-        {
-            _score += points;
         }
     }
 }

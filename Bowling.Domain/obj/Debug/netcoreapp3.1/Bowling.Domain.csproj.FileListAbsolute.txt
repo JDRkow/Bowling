@@ -11,3 +11,16 @@ C:\Projects temp\bowling\Bowling.Domain\obj\Debug\netcoreapp3.1\Bowling.Domain.c
 C:\Projects temp\bowling\Bowling.Domain\obj\Debug\netcoreapp3.1\Bowling.Domain.dll
 C:\Projects temp\bowling\Bowling.Domain\obj\Debug\netcoreapp3.1\Bowling.Domain.pdb
 C:\Projects temp\bowling\Bowling.Domain\obj\Debug\netcoreapp3.1\Bowling.Domain.genruntimeconfig.cache
+G:\Download\work focus\job\Bowling\Bowling.Domain\bin\Debug\netcoreapp3.1\Bowling.Domain.exe
+G:\Download\work focus\job\Bowling\Bowling.Domain\bin\Debug\netcoreapp3.1\Bowling.Domain.deps.json
+G:\Download\work focus\job\Bowling\Bowling.Domain\bin\Debug\netcoreapp3.1\Bowling.Domain.runtimeconfig.json
+G:\Download\work focus\job\Bowling\Bowling.Domain\bin\Debug\netcoreapp3.1\Bowling.Domain.runtimeconfig.dev.json
+G:\Download\work focus\job\Bowling\Bowling.Domain\bin\Debug\netcoreapp3.1\Bowling.Domain.dll
+G:\Download\work focus\job\Bowling\Bowling.Domain\bin\Debug\netcoreapp3.1\Bowling.Domain.pdb
+G:\Download\work focus\job\Bowling\Bowling.Domain\obj\Debug\netcoreapp3.1\Bowling.Domain.csprojAssemblyReference.cache
+G:\Download\work focus\job\Bowling\Bowling.Domain\obj\Debug\netcoreapp3.1\Bowling.Domain.AssemblyInfoInputs.cache
+G:\Download\work focus\job\Bowling\Bowling.Domain\obj\Debug\netcoreapp3.1\Bowling.Domain.AssemblyInfo.cs
+G:\Download\work focus\job\Bowling\Bowling.Domain\obj\Debug\netcoreapp3.1\Bowling.Domain.csproj.CoreCompileInputs.cache
+G:\Download\work focus\job\Bowling\Bowling.Domain\obj\Debug\netcoreapp3.1\Bowling.Domain.dll
+G:\Download\work focus\job\Bowling\Bowling.Domain\obj\Debug\netcoreapp3.1\Bowling.Domain.pdb
+G:\Download\work focus\job\Bowling\Bowling.Domain\obj\Debug\netcoreapp3.1\Bowling.Domain.genruntimeconfig.cache
