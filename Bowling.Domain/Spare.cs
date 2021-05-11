@@ -6,7 +6,7 @@
 
         public override void AddBonus(Frame one, Frame two)
         {
-            Score += one.pinsFirstThrow;
+            Score += one.PinsFirstThrow;
         }
     }
 }

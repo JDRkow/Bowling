@@ -2,25 +2,25 @@
 {
     public class Frame
     {
-        public int pinsFirstThrow;
-        public int pinsSecondThrow;
+        public int PinsFirstThrow;
+        public int PinsSecondThrow;
         public int Score;
         public Frame (int pinsFirst, int pinsSecond)
         {
-            pinsFirstThrow = pinsFirst;
-            pinsSecondThrow = pinsSecond;
+            PinsFirstThrow = pinsFirst;
+            PinsSecondThrow = pinsSecond;
         }
         public Frame CreateFrame()
         {
-            if (pinsFirstThrow == 10)
+            if (PinsFirstThrow == 10)
                 return new Strike();
-            if ((pinsFirstThrow + pinsSecondThrow) == 10)
-                return new Spare(pinsFirstThrow, pinsSecondThrow);
-            return new Open(pinsFirstThrow, pinsSecondThrow);
+            if ((PinsFirstThrow + PinsSecondThrow) == 10)
+                return new Spare(PinsFirstThrow, PinsSecondThrow);
+            return new Plain(PinsFirstThrow, PinsSecondThrow);
         }
         public int CalcScore()
         {
-            return pinsFirstThrow + pinsSecondThrow + Score;
+            return PinsFirstThrow + PinsSecondThrow + Score;
         }
         
         public virtual void AddBonus(Frame one, Frame two)

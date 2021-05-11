@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Bowling.Domain
+﻿namespace Bowling.Domain
 {
     class Final : Frame
     {
         private int _pinsThirdThrow;
-        public Final(int pinsFirstThrow, int pinsSecondThrow, int pinsThirdThrow) : base(pinsFirstThrow, pinsSecondThrow)
+        public Final(int PinsFirstThrow, int PinsSecondThrow, int pinsThirdThrow) : base(PinsFirstThrow, PinsSecondThrow)
         {
             _pinsThirdThrow = pinsThirdThrow;
         }
